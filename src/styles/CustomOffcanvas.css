@@ -1,0 +1,48 @@
+.custom-offcanvas {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: #f0f0f0; /* Slightly different shade of background color */
+    padding: 1rem;
+    transition: right 0.3s;
+    z-index: 9999;
+    font-family: Arial, sans-serif; /* Match the font with the rest of the page */
+}
+
+.custom-offcanvas.show {
+    right: 0;
+}
+
+.custom-offcanvas-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.cart-item {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+.empty-cart-button,
+.total-price-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.empty-cart-button:hover,
+.total-price-button:hover {
+    background-color: #0056b3;
+}
